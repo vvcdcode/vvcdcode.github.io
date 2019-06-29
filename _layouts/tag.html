@@ -1,0 +1,15 @@
+---
+layout: page
+---
+<div id="tag-content" role="main">
+  <ul class="post-list">
+      {% for post in site.posts %}
+        {% if post.tags contains page.name %}
+          {% include item.html %}
+          {% if forloop.last == false %}<hr>{% endif %}
+        {% endif %}
+      {% endfor %} 
+  </ul> 
+        
+</div>
+
