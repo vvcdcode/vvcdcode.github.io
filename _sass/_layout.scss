@@ -4,7 +4,7 @@
 *	Variables
 */
 $b3: 480px;
-$mobile: $b3;
+$tablet: $b3;
 $b2: 768px;
 $tablet: $b2;
 $b1: 960px;
@@ -72,25 +72,27 @@ pre code.hljs {
 .site-header-container, .post-header-container {
 	width: 100%;
 	text-align: center;
+	.subtitle, .info {
+		font-size: modular-scale(1);
+	}
 	&.has-cover {
 		color: $white;
-		text-shadow: 0 2px 1px rgba(0,0,0,0.67) !important;
 		background-position: 50% 50%;
 		background-size: cover;
-		.title {
-			font-size: modular-scale(6);
-		}
 		.subtitle, .info {
-			font-size: modular-scale(1);
+			a{
+				color: $white;
+				text-decoration: none;
+			}
 		}
 	}
 	.scrim {
-		padding: 3em 1em;
+		padding: 4em 1em 2em 1em;
 		&.has-cover {
 			background-color: rgba(0,0,0,0.2);
-			padding: 6em 1em !important;
+			padding: 4em 1em 2em 1em !important;
 			@include media($tablet) {
-				padding: 9em 1em !important;
+				padding: 5em 1em 3em 1em !important;
 			}
 		}
 	}
@@ -106,7 +108,7 @@ pre code.hljs {
 	/*
 	*	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
 	*/
-  // Mobile view
+  // tablet view
   .navigation-menu-button {
     display: block;
     float: right;
@@ -196,7 +198,7 @@ pre code.hljs {
 .page-content {
 	.wrapper {
 		@include outer-container;
-		padding: 1em;
+		padding: 1em 0;
 	}
 	/*
 	*	index.html
@@ -204,6 +206,12 @@ pre code.hljs {
 	.post-list {
 		padding-top: 1em !important;
 		@extend %default-ul;
+		.post-tags {
+			font-size: modular-scale(1);
+		}
+		h2 {
+			font-size: modular-scale(2);
+		}
 	}
 	.post-meta {
 		@include outer-container;
@@ -214,11 +222,13 @@ pre code.hljs {
 			text-align: left;
 			font-size: 0.9em;
 		}
-		.post-categories {
+		.post-author {
 			@include span-columns(6);
-			margin-right: 0;
 			text-align: right;
 			font-size: 0.9em;
+			a {
+				color: $medium-gray;
+			}
 		}
 	}
 	.pagination {
@@ -228,28 +238,26 @@ pre code.hljs {
 		.page-number {
 			padding: 0 1em;
 		}
-    a.newer-posts {
-      text-decoration: none;
-    }
+		a.newer-posts {
+		text-decoration: none;
+		}
 	}
 	.site-header-container {
 		color: $white;
-		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
 		background-color: $highlight-color;
 		.site-header{
 			.title {
-				font-size: modular-scale(6);
-			}
-			.subtitle {
-				font-style: italic;
-				font-size: modular-scale(1);
+				font-size: modular-scale(5);
 			}
 		}
 	}
 	img {
 		display: block;
 		margin: auto;
-		width: 90%;
+		width: 100%;
+	}
+	.highlight {
+		margin: 0;
 	}
 	/*
 	*	Posts
@@ -269,9 +277,6 @@ pre code.hljs {
 		.post-content {
 			padding: 1em 0;
 		}
-		.tags {
-			font-size: 0.9em;
-		}
 		.rss {
 			margin: 1em 0 0 0;
 			@include span-columns(12);
@@ -281,14 +286,9 @@ pre code.hljs {
 			}
 		}
 		.share {
-			font-weight: bold;
 			margin: 0 0 1em 0;
+			text-align: right;
 			@include span-columns(12);
-			@include media ($tablet) {
-				@include span-columns(6);
-				margin: 1em 0;
-				text-align: right;
-			}
 			a {
 				width: 1em;
 				padding: 0 0.25em;
@@ -352,14 +352,14 @@ pre code.hljs {
 .site-footer {
 	$link-color: $white;
 	padding: 1em 1em 2em 1em;
-	background-color: $highlight-color;
-	color: $white;
+	background-color: $light-gray;
+	color: $medium-gray;
 	a {
-	  color: $link-color;
+	  color: $medium-gray;
 	  &:active,
 	  &:focus,
 	  &:hover {
-	    color: darken($link-color, 10%);
+	    color: darken($medium-gray, 20%);
 	  }
 	  &:active,
 	  &:focus {
@@ -373,35 +373,14 @@ pre code.hljs {
 
 	}
 	/*
-	*	Site Navigation (left)
-	*/
-	.site-navigation {
-		@include span-columns(12);
-		@include media ($mobile) {
-			@include span-columns(6);
-		}
-		@include media ($tablet) {
-			@include span-columns(4);
-		}
-		font-size: 0.9em;
-		ul {
-			@extend %default-ul;
-		}
-	}
-	/*
 	*	Contact Info (center)
 	*/
 	.site-contact {
 		margin-top: 1em;
 		@include span-columns(12);
-		@include media ($mobile) {
-			@include span-columns(6);
-			margin-top: 0;
-			margin-right: 0;
-		}
 		@include media ($tablet) {
-			@include span-columns(4);
-			margin-top: 0;
+			margin: 1em 0;
+			@include span-columns(8);
 		}
 		font-size: 0.9em;
 		i {
@@ -417,11 +396,12 @@ pre code.hljs {
 	*/
 	.site-signature {
 		margin-top: 1em;
+		text-align: left;
 		@include span-columns(12);
 		@include media ($tablet) {
+			margin: 1em 0;
+			text-align: right;
 			@include span-columns(4);
-			margin-right: 0;
-			margin-top: 0;
 		}
 		font-size: 0.9em;
 		a {

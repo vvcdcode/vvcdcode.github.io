@@ -7,7 +7,7 @@ $base-font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helveti
 $heading-font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif; // $base-font-family;
 
 // Font Sizes
-$base-font-size: $em-base; // 16px
+$base-font-size: 18px;
 
 // Adjust modular scale ratio
 $modular-scale-ratio: $minor-third;
@@ -24,16 +24,16 @@ $base-z-index: 0;
 
 // Colors
 $dark-gray: #333;
-$medium-gray: #999;
+$medium-gray: #666;
 $light-gray: #ddd;
 $white: #fff;
 // Flat UI Colors. For more, see http://flatuicolors.com/
 $turquoise: #1abc9c;	// Turqoise
 $green: #27ae60;	  	// Nephritis
-$blue: #2980b9;				// Belize Hole
-$purple: #8e44ad;			// Wisteria
+$blue: #2298e7;				// Belize Hole
+$purple: #5c17dd;			// Wisteria
 $orange: #d35400;			// Pumpkin
-$red:	#c0392b;				// Pomegranate
+$red:	#ec4a21;				// Pomegranate
 $gray: #7f8c8d;				// Asbestos
 // Even more colors
 $bc-red: #bc0000;
@@ -41,7 +41,7 @@ $bc-red: #bc0000;
 // Font Colors
 $base-background-color: #fff;
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $purple;
 $highlight-color: tint($action-color, 33%);
 
 // Border

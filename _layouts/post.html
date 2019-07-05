@@ -7,6 +7,11 @@ layout: default
   <div class="scrim {% if page.cover %}has-cover{% endif %}">
     <header class="post-header">
       <h1 class="title">{{ page.title }}</h1>
+      <h2 class="subtitle">
+        {% if page.tags %}{% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+        {% endfor %}{% endif %}
+      </h2>
     </header>
   </div>
 </div>
@@ -29,15 +34,9 @@ layout: default
       {% endif %}
     {% endfor %}{% endif %}
   </div>
-  <div class="post-tags">
-    {% if page.tags %}in {% for tag in page.tags %}
-      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-    {% endfor %}{% endif %}
-  </div>
 </section>
 
 <section class="share">
-  <span>공유하기</span>
   {% for social in site.social %}
     {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
     {% if social.name == "Twitter" and social.share == true %}
