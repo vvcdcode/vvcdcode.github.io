@@ -35,7 +35,7 @@ collections:
   tags:
     output: true
     permalink: /tags/:path/
-  author:
+  authors:
     output: true
     permalink: /authors/:path/
 
