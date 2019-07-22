@@ -3,7 +3,7 @@ layout: post
 title:  자바스크립트와 웹 프론트엔드
 date: 2019-07-22
 tags: javascript
-authors: ryuchoi
+authors: Seoryung
 cover: /assets/post_image/20190628/test4.jpg
 ---
 
