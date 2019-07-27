@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python function
-date: 2019-07-13
+date: 2019-07-27
 tags: python basic
 authors: gah_rlic
 cover: /assets/post_image/20190628/test4.jpg
