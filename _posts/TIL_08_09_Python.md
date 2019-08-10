@@ -1,6 +1,10 @@
-| Date | Teacher | Category |
-|:----|:----|:----|
-|08.09 | Sunmi, Archal | SQL, Python |
+---
+layout: post
+title: "[python] TDD방법론"
+date: 2019-08-09 20:00:00
+tags: python
+authors: kwang
+---
 
 <br>
 
