@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] TDD방법론"
+title: "[Python] Pytest를 통해 TDD 방법론을 알아보자"
 date: 2019-08-09 20:00:00
 tags: python
 authors: kwang
