@@ -13,8 +13,7 @@ title: VVCD code
 subtitle: "VVCD code & tech blog"
 email: vvcdcode@gmail.com
 name: vvcdcode
-description: >
- vvcd-code-blog
+description: > 디자인 전공생들의 개발 공부 블로그.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -78,21 +77,21 @@ social:
     icon: twitter
     username: KMUVVCD
     url: https://twitter.com/kmuvvcd
-    desc: Follow our twitter!
+    desc: twitter
     share: true
 
   - name: Facebook
     icon: facebook
     username: 국민대학교 시각디자인학과 여성동문모임
     url: https://bit.ly/2ERjORu
-    desc: Friend us on Facebook!
+    desc: facebook
     share: true
 
   - name: GitHub
     icon: github
     username: vvcdcode.github.io
     url: https://github.com/vvcdcode/vvcdcode.github.io
-    desc: Visit our GitHub!
+    desc: github
     share: true
 
   - name: LinkedIn
@@ -190,12 +189,12 @@ social:
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-    fb_image: "/assets/logo.png"
+    fb_image: "/assets/header_image.png"
     fb_image_width: 612
     fb_image_height: 605
     fb_image_type: "image/png"
 
-    twitter_image: "/assets/logo.png"
+    twitter_image: "/assets/header_image.png"
 
     os_repo: "https://github.com/vvcdcode/vvcdcode.github.io"
     os_rcs_type: "git"
