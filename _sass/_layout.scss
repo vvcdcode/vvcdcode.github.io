@@ -90,7 +90,7 @@ pre code.hljs {
 		padding: 4em 1em 2em 1em;
 		&.has-cover {
 			background-color: rgba(0,0,0,0.2);
-			padding: 4em 1em 2em 1em !important;
+			padding: 4em 1em 3.2em 1em !important;
 			@include media($tablet) {
 				padding: 5em 1em 3em 1em !important;
 			}
@@ -248,6 +248,7 @@ pre code.hljs {
 		.site-header{
 			.title {
 				font-size: modular-scale(5);
+				margin-bottom: 8px;
 			}
 		}
 	}
