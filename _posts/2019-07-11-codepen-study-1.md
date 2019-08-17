@@ -4,7 +4,7 @@ title:  코드펜 따라하기 - 내비게이션 메뉴 (1)
 date: 2019-07-13
 tags: codepen html css
 authors: eojinlee
-cover: /assets/post_image/20190628/test4.jpg
+cover: /assets/post_header.png
 ---
 
 HTML, CSS, JS를 각각 어느정도 배웠는데, 언어만 배우다보니 점점 지루해졌다. 아무래도 디자인 전공 출신이라 내가 배운 내용을 토대로 직접 화면을 구현하고 싶었다. 하지만 혼자서 웹페이지나 앱 전체를 구현한 경험은 없어서 어디서부터 시작해야할지 갈피를 잡지 못하고 있었다. 

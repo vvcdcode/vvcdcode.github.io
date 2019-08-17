@@ -4,7 +4,7 @@ title: 이벤트 핸들러
 date: 2019-08-10
 tags: javascript
 authors: ryuchoi
-cover: /assets/post_image/20190628/test4.jpg
+cover: /assets/post_header.png
 ---
 
 

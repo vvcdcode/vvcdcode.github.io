@@ -4,7 +4,7 @@ title:  코드펜 따라하기 - 다크모드 스위치
 date: 2019-08-04
 tags: codepen html css javascript
 authors: eojinlee
-cover: /assets/post_image/20190628/test4.jpg
+cover: /assets/post_header.png
 ---
 
 ## 다크모드로 변하는 토글 스위치 만들기

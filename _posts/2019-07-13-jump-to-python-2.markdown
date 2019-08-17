@@ -4,7 +4,7 @@ title: jump-to-python-2
 date: 2019-07-13
 tags: python basic
 authors: gah_rlic
-cover: /assets/post_image/20190628/test4.jpg
+cover: /assets/post_header.png
 ---
 
 난생 처음 파이썬이란 것을 켜봤다! 오랜만에 다른 쪽 뇌를 사용해보았다.

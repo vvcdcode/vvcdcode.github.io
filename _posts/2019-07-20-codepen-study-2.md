@@ -4,7 +4,7 @@ title:  코드펜 따라하기 - 내비게이션 메뉴 (2)
 date: 2019-07-20
 tags: codepen html css javascript
 authors: eojinlee
-cover: /assets/post_image/20190628/test4.jpg
+cover: /assets/post_header.png
 ---
 
 ## 언더바가 움직이는 내비게이션 메뉴 만들기
