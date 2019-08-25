@@ -74,7 +74,7 @@ hr {
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: $small-spacing 0 $base-spacing;
+  margin: $em-base * 1.12 0 $base-spacing * 1.12;
 }
 
 blockquote {
