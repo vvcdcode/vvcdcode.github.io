@@ -5,28 +5,34 @@
 // Typography
 $base-font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif; // $Source Sans Pro;
 $heading-font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif; // $base-font-family;
+$code-font-family: Consolas,"Courier New","NanumGothic",monospace;
 
 // Font Sizes
-$base-font-size: 18px;
+$base-font-size: 17px;
+$h1-font-size: 44px;
+$h2-font-size: 29px;
+$h3-font-size: 22px;
+$small-font-size: 14px;
+
 
 // Adjust modular scale ratio
 $modular-scale-ratio: $minor-third;
 
 // Line height
-$base-line-height: 1.8;
-$heading-line-height: 1.8;
+$base-line-height: 1.7;
+$heading-line-height: 1.7;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * $em-base;
-$small-spacing: $base-spacing / 2;
+$base-spacing: $base-font-size;
+$small-spacing: 7px;
 $big-spacing: $base-spacing * 1.56;
 $base-z-index: 0;
 
 // Colors
 $dark-gray: #232323;
 $medium-gray: #767676;
-$light-gray: #ddd;
+$light-gray: #eee;
 $snow-white: #f2f2f2;
 $white: #fff;
 // Flat UI Colors. For more, see http://flatuicolors.com/
@@ -35,8 +41,9 @@ $green: #27ae60;	  	// Nephritis
 $blue: #2298e7;				// Belize Hole
 $purple: #5c17dd;			// Wisteria
 $orange: #d35400;			// Pumpkin
-$red:	#ec4a21;				// Pomegranate
-$gray: #7f8c8d;				// Asbestos
+$red:	#df0505;				// Pomegranate
+$gray: #7f8c8d;	
+$beige: #fff6f0;			// Asbestos
 // Even more colors
 $bc-red: #bc0000;
 
