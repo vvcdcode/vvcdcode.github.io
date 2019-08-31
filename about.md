@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-cover: /assets/about_image.jpg
+cover: /assets/about_image.png
 ---
 
 VVCD Code는 국민대 시각디자인학과 여성동문모임 KMUVVCD에서부터 출발하여,
